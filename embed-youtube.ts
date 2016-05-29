@@ -74,7 +74,7 @@ namespace io_github_crishn {
         }
 
 
-        embedOnId(id: string) {
+        on(id: string) {
             let target = <HTMLElement>document.querySelector(id);
             if (target != null) {
                 this.playOn(target);

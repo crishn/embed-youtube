@@ -61,7 +61,7 @@ var io_github_crishn;
                 .allowFullScreen(true)
                 .videoParameters({ "rel": 0, "autoplay": 1 });
         };
-        YoutubeVideo.prototype.embedOnId = function (id) {
+        YoutubeVideo.prototype.on = function (id) {
             var target = document.querySelector(id);
             if (target != null) {
                 this.playOn(target);
