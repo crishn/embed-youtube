@@ -21,29 +21,29 @@ Embed a Youtube video with size `600x400` and serveral video parameters in a DOM
 
 ## API
 
-### `YoutubeVideo(id)`
+### YoutubeVideo(id)
 
 Create a new `YoutubeVideo` instance with the given video `id`.
 
-### `width(width)`
+### width(width)
 
 Sets a width for the video preview image and the video frame. The parameter width can be set as integer (e.g. `600`)
 or string (e.g. `"600px"`).
 
 Returns: `YoutubeVideo` instance.
 
-### `height(height)`
+### height(height)
 
 Sets a height for the video preview image and the video frame.
 
-### `border(border)`
+### border(border)
 
 Sets the border with or border style.
 For `border` both integer and string values are allowed.
 
 Returns: `YoutubeVideo` instance.
 
-### `size(width, height)`
+### size(width, height)
 
 Same as 
 
@@ -51,13 +51,13 @@ Same as
 
 Returns: `YoutubeVideo` instance.
 
-### `allowFullscreen(allowFullScreen)`
+### allowFullscreen(allowFullScreen)
 
 Allow youtube fullscreen mode (`true`) or not (`false`).
 
 Returns: `YoutubeVideo` instance.
 
-### `videoParameters(parameters)``
+### videoParameters(parameters)
 
 Youtube iFrame API parameters in JSON notation. See https://developers.google.com/youtube/player_parameters#Parameters.
 
@@ -73,14 +73,24 @@ Same as
 
 Returns: `YoutubeVideo` instance.
 
-### `on(id)`
+### on(id)
 
 Embeds the `YoutubeVideo` instance in an element with the given selector `id`.
 
-### `playOn(target)`
+### playOn(target)
 
 Embeds the `YoutubeVideo` instance in the DOM element `target`.
 
-### 
+## Creating changes
+
+If you want to adapt the script to your needs, don't modify the Javacript.
+Best install [Typescript](http://www.typescriptlang.org/):
+
+    $ npm install typescript
+
+Feel free to change the file [embed-youtube.ts](embed-youtube.ts) and compile via
+
+    $ tsc embed-youtube.ts
+ 
 # License
 [MIT](LICENSE)
