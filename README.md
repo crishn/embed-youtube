@@ -66,6 +66,7 @@ Returns: `YoutubeVideo` instance.
 ### defaults()
 
 Same as
+
     size(560, 315)
       .border(0)
       .allowFullScreen(true)
